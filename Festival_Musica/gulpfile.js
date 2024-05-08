@@ -5,9 +5,9 @@ import gulpSass from "gulp-sass"
 const sass = gulpSass(dartSass);
 
 export function css (done){
-    src('src/scss/app.scss')
+    src('src/scss/app.scss', {sourcemap: true})
         .pipe(sass().on("error", sass.logError)) // fuente
-        .pipe(dest('build/scss')) // direccion destino
+        .pipe(dest('build/scss', {sourcemap: "."})) // direccion destino
     done();
 }
 
