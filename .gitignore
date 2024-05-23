@@ -398,3 +398,4 @@ FodyWeavers.xsd
 *.sln.iml
 Festival_Musica/build/scss/app.css
 Festival_Musica/build/js/app.js
+/Festival_Musica/build/img
